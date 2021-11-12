@@ -15,11 +15,10 @@ If everything worked as intended the 2 messages "Ran 3 tests in 0.Xs" and "OK" s
 -Item - Class that allows us to specify a purchased good.\
 -TestReceipt - Class to test the Receipt class via the provided testcases.
 
-
 ### General thoughts:
 -Data will be printed to the console.\
 -Since no programming language was specified Python was used for its simplicity.\
--To use this program for arbitrary inputs the user has to uncomment ```unittest.main()``` and create its input similar to the logic in the testcases by creating a list of item objects that at least have a name and a price. Additionally general tax exemption and flag for the import tax can be set as well.\
+-To use this program for arbitrary inputs the users have to uncomment ```unittest.main()``` in main.py and generate their inputs similar to the logic in the testcases. To do this they need to create a list of item objects that (at least) contain a name and a price. Additionally general tax exemption and a flag for the import tax can be set as well.\
 -The challenge didn't provide any information concerning multiple quantities of the same product. Regardless logic for this case was included.
 
 ### Problem 1: SALES TAXES
