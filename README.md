@@ -1,12 +1,30 @@
 ### HOW TO:
-This is a solution for the "sales taxes" coding challenge.
-To run the code and verify that all testcases are fulfilled simply download the python script and then maneuver your terminal into the corresponding folder that contains the script.
-Lastly run the script by typing ```python main.py``` into your terminal.
+This is a solution for the "sales taxes" coding challenge.\
+To run the code and verify that all testcases are fulfilled simply download the python script.\
+Afterwards maneuver your terminal into the folder that contains the script.\
+Lastly run the script by typing ```python main.py``` into your terminal.\
+If everything worked as intended the 2 messages "Ran 3 tests in 0.Xs" and "OK" should appear.
+
+### Assumptions:
+### Testcases:
+-Since this is a coding challenge the program should be validated via the provided inputs.\
+-The 3 testcases have been implemented and will run on startup to verify the correct output.
+
+### Classes:
+-Receipt - Class that contains all the methods required to calculate taxes and print a receipt.\
+-Item - Class that allows us to specify a purchased good.
+
+### General thoughts:
+-Data will be printed to the console.\
+-Since no programming language was specified Python was used for its simplicity.\
+-To use this program for arbitrary inputs the user has to uncomment ```unittest.main()``` and create its input similar to the logic in the testcases by creating a list of item objects that at least have a name and a price. Additionally general tax exemption and flag for the import tax can be set as well.\
+-The challenge didn't provide any information concerning multiple quantities of the same product. Regardless logic for this case was included.
 
 ### Problem 1: SALES TAXES
 Basic sales tax is applicable at a rate of 10% on all goods, except books, food, and medical products that are exempt.\
 Import duty is an additional sales tax applicable on all imported goods at a rate of 5%, with no exemptions.\
-When I purchase items I receive a receipt which lists the name of all the items and their price (including tax), finishing with the total cost of the items, and the total amounts of sales taxes paid. The rounding rules for sales tax are that for a tax
+When I purchase items I receive a receipt which lists the name of all the items and their price (including tax), finishing with the total cost of the items, and the total amounts of sales taxes paid.\
+The rounding rules for sales tax are that for a tax
 rate of n%, a shelf price of p contains (np/100 rounded up to the nearest 0.05) amount of sales tax.\
 Write an application that prints out the receipt details for these shopping baskets...
 
