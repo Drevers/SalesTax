@@ -12,7 +12,9 @@ If everything worked as intended the 2 messages "Ran 3 tests in 0.Xs" and "OK" s
 
 ### Classes:
 -Receipt - Class that contains all the methods required to calculate taxes and print a receipt.\
--Item - Class that allows us to specify a purchased good.
+-Item - Class that allows us to specify a purchased good.\
+-TestReceipt - Class to test the Receipt class via the provided testcases.
+
 
 ### General thoughts:
 -Data will be printed to the console.\
